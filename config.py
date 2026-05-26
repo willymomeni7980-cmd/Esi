@@ -4,7 +4,7 @@ import os
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 # آیدی ادمین (عددی)
-ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "2083913926").split(",") if x.strip()]
+ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "").split(",") if x.strip()]
 
 # شماره کارت برای پرداخت
 CARD_NUMBER = os.environ.get("CARD_NUMBER", "0000-0000-0000-0000")

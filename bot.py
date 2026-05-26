@@ -5,7 +5,6 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Mess
 import config
 import database as db
 
-
 # جلوگیری از double payment
 _paying_users: set = set()
 

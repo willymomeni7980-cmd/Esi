@@ -7,6 +7,8 @@ import database as db
 
 
 print("BOT STARTING...", flush=True)
+import os
+print("TOKEN:", os.environ.get("BOT_TOKEN", "NOT FOUND")[:20], flush=True)
 # جلوگیری از double payment
 _paying_users: set = set()
 

@@ -5,6 +5,8 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Mess
 import config
 import database as db
 
+
+print("BOT STARTING...", flush=True)
 # جلوگیری از double payment
 _paying_users: set = set()
 

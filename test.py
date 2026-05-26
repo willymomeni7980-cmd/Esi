@@ -1,8 +1,8 @@
 import os
-from telegram.ext import Application
-
-token = os.environ.get("BOT_TOKEN", "")
-print(f"Token found: {bool(token)}", flush=True)
-
-app = Application.builder().token(token).build()
-print("App built successfully!", flush=True)
+print("importing config...", flush=True)
+import config
+print("importing database...", flush=True)
+import database as db
+print("init db...", flush=True)
+db.init_db()
+print("ALL OK", flush=True)

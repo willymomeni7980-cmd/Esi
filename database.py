@@ -1,6 +1,6 @@
 import sqlite3, os, json
 
-DB_PATH = os.environ.get("DB_PATH", "bot.db")
+DB_PATH = os.environ.get("DB_PATH", "/data/bot.db")
 
 _db_dir = os.path.dirname(DB_PATH)
 if _db_dir and not os.path.exists(_db_dir):

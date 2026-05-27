@@ -1,7 +1,7 @@
 import os
 
 # Bot Token
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8771638420:AAGSfwSvj2_nRGTKJsC8vZ0elI-LVDCu2ws)
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8771638420:AAHz3QpNQzThb00brJMiSd4oYITV1OdojuA")
 
 # آیدی ادمین (عددی)
 ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "7552570342").split(",") if x.strip()]
